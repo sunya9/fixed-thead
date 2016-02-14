@@ -6,7 +6,7 @@ fixed-thead is a simple library that fix the thead when window is scrolled.
 
 # Installation
 
-* npm: 'npm install --save fixed-thead'
+* npm: `npm install --save fixed-thead`
 
 # How to use
 

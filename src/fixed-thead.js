@@ -1,7 +1,9 @@
-// Fixed-thead 1.0.0
-// https://github.com/sunya9/fixed-thead
-// (c) 2016 sunya9(_X_y_z_)
- 
+/** @license
+  Fixed-thead 1.0.0
+  https://github.com/sunya9/fixed-thead
+  (c) 2016 sunya9(_X_y_z_)
+**/
+
 !function (root, factory) {
   'use strict';
   if (typeof define === 'function' && define.amd) {
@@ -32,7 +34,7 @@
     enabled;
 
   function eachInit(table) {
-    var table, thead, cloneThead;
+    var thead, cloneThead;
 
     if(table.nodeName !== 'TABLE') {
       throw new Error('Target selectors must be a table element.');
@@ -118,10 +120,11 @@
   }
 
   function getStyle(element, styleProp){
+    var y;
     if (element.currentStyle)
-      var y = element.currentStyle[styleProp];
+      y = element.currentStyle[styleProp];
     else if (window.getComputedStyle)
-      var y = document.defaultView.getComputedStyle(element, null).getPropertyValue(styleProp);
+      y = document.defaultView.getComputedStyle(element, null).getPropertyValue(styleProp);
     return y;
   }
 
@@ -147,6 +150,6 @@
         });
       }
     });
-  };
+  }
   return FixedThead;
 });

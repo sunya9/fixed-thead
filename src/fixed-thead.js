@@ -1,3 +1,7 @@
+// Fixed-thead 1.0.0
+// https://github.com/sunya9/fixed-thead
+// (c) 2016 sunya9(_X_y_z_)
+ 
 !function (root, factory) {
   'use strict';
   if (typeof define === 'function' && define.amd) {

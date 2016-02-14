@@ -47,7 +47,7 @@ describe('FixedThead', function() {
 
   it('When pass the table, thead must be hidden.', function() {
     var fixedThead = new FixedThead('#success-table');
-    document.body.scrollTop = 700;
+    document.body.scrollTop = 1000;
     fixedThead.enabled = true;
     var cloneThead = document.querySelector('#success-table>thead:first-child');
     expect(cloneThead.style.display).toBe('none');

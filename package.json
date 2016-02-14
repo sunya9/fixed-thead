@@ -1,6 +1,6 @@
 {
   "name": "fixed-thead",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "fixed-thead is a simple library that fix the thead when window is scrolled.",
   "main": "fixed-thead.js",
   "scripts": {

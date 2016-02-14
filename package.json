@@ -4,8 +4,10 @@
   "description": "fixed-thead is a simple library that fix the thead when window is scrolled.",
   "main": "fixed-thead.js",
   "scripts": {
-    "test": "karma start karma.conf.js",
-    "build": "uglifyjs src/fixed-thead.js -o dist/fixed-thead.min.js --source-map dist/fixed-thead.min.map -m --comments"
+    "test": "./node_modules/.bin/karma start karma.conf.js && npm run lint",
+    "build": "uglifyjs src/fixed-thead.js -o dist/fixed-thead.min.js --source-map dist/fixed-thead.min.map -m --comments",
+    "lint": "eslint src/fixed-thead.js",
+    "test-dev": "karma start karma.conf.js --single-run false"
   },
   "repository": {
     "type": "git",

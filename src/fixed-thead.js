@@ -1,5 +1,5 @@
 /** @license
-  Fixed-thead 1.0.0
+  Fixed-thead 1.0.2
   https://github.com/sunya9/fixed-thead
   (c) 2016 sunya9(_X_y_z_)
 **/
@@ -50,6 +50,7 @@
     cloneThead.style.position = 'fixed';
 
     cloneThead.style.top = offsetTop + 'px';
+    cloneThead.style.zIndex = 9999;
     cloneThead.style.marginLeft = -parseInt(getStyle(table, 'border-spacing')) + offsetLeft + 'px';
     forEach.call(cloneThead.children, function(tr) {
       forEach.call(tr.children, function(cell) {
@@ -68,7 +69,7 @@
     function computeWidth() {
       forEach.call(thead.children, function(tr, trIndex) {
         forEach.call(tr.children, function(cell, cellIndex) {
-          cloneThead.children[trIndex].children[cellIndex].style.width = cell.clientWidth + 'px';
+          cloneThead.children[trIndex].children[cellIndex].style.width = cell.getBoundingClientRect().width + 'px';
         });
       });
     }

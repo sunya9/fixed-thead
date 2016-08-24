@@ -1,5 +1,5 @@
 /** @license
-  Fixed-thead 1.0.2
+  Fixed-thead 1.0.3
   https://github.com/sunya9/fixed-thead
   (c) 2016 sunya9(_X_y_z_)
 **/

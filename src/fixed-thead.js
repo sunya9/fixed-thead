@@ -1,5 +1,5 @@
 /** @license
-  Fixed-thead 1.0.3
+  Fixed-thead 1.0.4
   https://github.com/sunya9/fixed-thead
   (c) 2016 sunya9(_X_y_z_)
 **/
@@ -29,6 +29,7 @@
   var tables, fixedTheads;
   var offsetLeft,
     offsetTop,
+    zIndex,
     backgroundImage,
     backgroundColor,
     enabled;
@@ -50,7 +51,7 @@
     cloneThead.style.position = 'fixed';
 
     cloneThead.style.top = offsetTop + 'px';
-    cloneThead.style.zIndex = 9999;
+    cloneThead.style.zIndex = zIndex;
     cloneThead.style.marginLeft = -parseInt(getStyle(table, 'border-spacing')) + offsetLeft + 'px';
     forEach.call(cloneThead.children, function(tr) {
       forEach.call(tr.children, function(cell) {
@@ -134,6 +135,7 @@
     option = option || {};
     offsetLeft = option.offsetLeft || 0;
     offsetTop = option.offsetTop || 0;
+    zIndex = typeof option.enabled !== 'undefined' ? option.zIndex : 9999;
     enabled = typeof option.enabled !== 'undefined' ? option.enabled : true;
     backgroundImage = option.backgroundImage;
     backgroundColor = option.backgroundColor || '#fff';

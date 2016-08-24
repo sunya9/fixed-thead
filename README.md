@@ -19,6 +19,7 @@ fixedThead = new FixedThead('table', {
   offsetLeft: 0, // px only(default is 0)
   offsetTop: 50, // px only(default is 0)
   enabled: false // boolean(default is true)
+  zIndex: 1234 // integer(default is 9999)
 });
 
 // property
